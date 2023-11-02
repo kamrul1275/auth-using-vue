@@ -15,7 +15,8 @@ export default {
         email: email.value,
         password: password.value,
       });
-      localStorage.setItem('token', response.data.token);
+      localStorage.setItem('token', response.data.authorization.token);
+      console.log(localStorage);
 
       alert('login succesfully');
 
